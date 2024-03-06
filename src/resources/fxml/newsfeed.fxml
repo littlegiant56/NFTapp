@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane prefHeight="600.0" prefWidth="753.0" styleClass="main-content-holder" stylesheets="@../css/cupertino-light.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nftspy.gui.NewsfeedController">
+   <content>
+      <VBox fx:id="newsfeedVBox" alignment="TOP_CENTER" prefWidth="753.0" spacing="10.0" styleClass="main-content-holder">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+         </padding>
+      </VBox>
+   </content>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</ScrollPane>

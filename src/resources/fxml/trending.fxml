@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="753.0" styleClass="main-content-holder" stylesheets="@../css/cupertino-light.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nftspy.gui.TrendingController">
+   <children>
+      <VBox prefHeight="584.0" prefWidth="730.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox prefHeight="265.0" prefWidth="713.0" spacing="20.0" styleClass="space-1em">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="584.0" styleClass="title-5" text="Top hashtags in this month">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="304.0" prefWidth="713.0">
+                     <children>
+                        <HBox layoutX="257.0" layoutY="75.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FD8A8A; -fx-background-radius: 40px;" styleClass="elevated-2">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="40.0" layoutY="5.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="No. 1" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="firstHashTag" layoutX="78.0" layoutY="96.0" style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="#Hashtag1" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #8CC0DE; -fx-background-radius: 40px;" styleClass="elevated-2">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="No. 2" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="secondHashTag" layoutX="76.0" layoutY="96.0" style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="#Hashtag2" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="230.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #A8DF8E; -fx-background-radius: 40px;" styleClass="elevated-2">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="No. 3" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="thirdHashTag" layoutX="76.0" layoutY="96.0" style="-fx-text-fill: #FFFFFF;" styleClass="title-5" text="#ThisIsAVeryLongHashTag" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="30.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Label prefHeight="29.0" prefWidth="292.0" styleClass="title-5" text="Top-20 hashtag list">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ListView fx:id="listView" prefHeight="223.0" prefWidth="713.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
